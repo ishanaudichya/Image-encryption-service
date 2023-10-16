@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './ImageUploader.css'; // Create a separate CSS file for styling
 import { encrypt } from 'n-krypta';
+import { useNavigate } from 'react-router-dom';
 const ImageUploader = () => {
+  const navigate = useNavigate();
   const [imageData, setImageData] = useState('');
   const [imageFile, setImageFile] = useState(null);
 
@@ -44,16 +46,18 @@ const ImageUploader = () => {
         className="input"
         onChange={(e) => setPassword(e.target.value)}
       />
-
+    <button onClick={()=>{navigate("/decrypt")}}>decrypt</button>
 
 
       {imageData && (
-        <div className="image-preview"><p>
+        
+        <div className="image-preview">
+        
+        <button onClick={handleCopy}> Copy</button><p>
 
           {imageData}
         </p>
 
-        <button onClick={handleCopy}> Copy</button>
         </div>
       )}
     </div>
