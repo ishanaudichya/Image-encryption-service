@@ -1,30 +1,105 @@
-/* ImageUploader.css */
-.image-uploader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  input[type="file"] {
-    padding: 10px;
-    margin: 10px;
-    border: 2px solid #333;
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .image-preview {
-    
-    width: 60vw;
-    
-    background-color: #ffffff;
-    border: 2px solid #333;
-    border-radius: 5px; 
-    margin: 10px;
-    word-wrap: break-word;
+/* General container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
 
-    
+/* Image upload input styles */
+.image-upload {
+  margin: 10px;
+}
+
+/* Big button styles */
+.big-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.big-button:hover {
+  background-color: #2980b9;
+}
+
+/* Password input styles */
+.password-input {
+  margin: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Convert button styles */
+.convert-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.convert-button:hover {
+  background-color: #219f53;
+}
+
+/* Buttons container styles */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Download and Copy button styles */
+.download-button,
+.copy-button {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover,
+.copy-button:hover {
+  background-color: #d68910;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
   }
-  
+  .input {
+    font-size: 14px;
+  }
+  .big-button,
+  .convert-button,
+  .download-button,
+  .copy-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+

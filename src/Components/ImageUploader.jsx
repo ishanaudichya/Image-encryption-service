@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import './ImageUploader.css'; // Create a separate CSS file for styling
 import { encrypt } from 'n-krypta';
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 const ImageUploader = () => {
   const navigate = useNavigate();
   const [imageData, setImageData] = useState('');
-  const [imageFile, setImageFile] = useState(null);
 
   const [password, setPassword] = useState('');
+  const [encryptImageData, setEncryptImageData] = useState('');
+
+
 
 
   const handleImageUpload = (e) => {
@@ -15,52 +18,80 @@ const ImageUploader = () => {
     if (file) {
       const reader = new FileReader();
       reader.onload = () => {
-        setImageData(encrypt(reader.result, password));
+        setImageData(reader.result);
       };
       reader.readAsDataURL(file);
-      setImageFile(file);
     }
-
-  
-
 
   };
 
+  const downloadFile = () => {
+    const link = document.createElement("a");
+  const file = new Blob([encryptImageData], { type: 'text/plain' });
+  link.href = URL.createObjectURL(file);
+  link.download = "encrypt.txt";
+  link.click();
+  URL.revokeObjectURL(link.href);
+ }
+  
 
+const handleConvert =  ()=>{
+  setEncryptImageData(encrypt(imageData, password));
+}
     
   const handleCopy = ()=>{
-    navigator.clipboard.writeText(imageData);
+    navigator.clipboard.writeText(encryptImageData);
   }
+
   return (
-    <div className="image-uploader">
-      <input
-        type="file"
-        accept="image/*"
-        onChange={handleImageUpload}
-      />  
-       <input  
-        type="password"
-        value={password}
-        name="secret"
-        placeholder="Password"
-        className="input"
-        onChange={(e) => setPassword(e.target.value)}
-      />
-    <button onClick={()=>{navigate("/decrypt")}}>decrypt</button>
+    <>
+      <Navbar/><div className="container">
+  <input
+    className="image-upload"
+    type="file"
+    accept="image/*"
+    onChange={handleImageUpload}
+  />
 
+  <button className="big-button" onClick={handleConvert}>
+    Convert
+  </button>
 
-      {imageData && (
-        
-        <div className="image-preview">
-        
-        <button onClick={handleCopy}> Copy</button><p>
+  <div className="password-input">
+    <input
+      type="password"
+      value={password}
+      name="secret"
+      placeholder="Password"
+      className="input"
+      onChange={(e) => setPassword(e.target.value)}
+    />
+  </div>
 
-          {imageData}
-        </p>
+ 
 
-        </div>
-      )}
+  {encryptImageData && (
+    <div className="buttons-container">
+      <button className="download-button" onClick={downloadFile}>
+        Download
+      </button>
+      <button className="copy-button" onClick={handleCopy}>
+        Copy
+      </button>
     </div>
+
+
+
+    
+  )}
+
+  <button className="convert-button" onClick={() => navigate("/decrypt")}>
+    Decrypt
+  </button>
+  
+</div>
+
+    </>
   );
 };
 

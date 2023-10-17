@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { encrypt, decrypt, compare } from 'n-krypta'; 
-
+import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
 function ImageDecrypter() {
-    
+    const navigate =useNavigate();
     const [imgUrl, setImgUrl] = useState('');
     const [basetext, setBasetext] = useState('');
     const [password, setPassword] = useState('');
@@ -17,6 +18,7 @@ function ImageDecrypter() {
   return (
 
 <div>
+<Navbar/>
 <input
         value={basetext}
         type="text"
@@ -39,7 +41,7 @@ function ImageDecrypter() {
         <img src={imgUrl} />
       }
         
-    
+      <button onClick={()=>{navigate('/')}} >encrypt</button>
 </div>
   )
 }
