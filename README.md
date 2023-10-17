@@ -1,8 +1,10 @@
 
-# ImageCrypt
+# ImageCrypt | Secure Image Encryption
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa478661-c16c-4ba9-b97e-07d8a28bbef0/deploy-status)](https://app.netlify.com/sites/image-encrypt/deploys)
 
-ImageCrypt is a web-based tool that empowers you to securely encrypt image files using cutting-edge hashing and the AES-256 encryption algorithm. This guarantees that only authorized users with the correct password can decrypt and view the original image. ImageCrypt has been meticulously designed to prioritize security while offering a straightforward and user-friendly experience.
+![Live Preview](https://img.shields.io/badge/Website%20Preview-red)
+
+<a href="https://image-crypt.netlify.app/">ImgCrypt</a> is a web-based tool that empowers you to securely encrypt image files using cutting-edge hashing and the AES-256 encryption algorithm. This guarantees that only authorized users with the correct password can decrypt and view the original image. ImageCrypt has been meticulously designed to prioritize security while offering a straightforward and user-friendly experience.
 
 ## Features
 
@@ -21,9 +23,11 @@ To get started with ImageCrypt, follow these steps:
 3. Start the web application using `npm start`.
 4. Access the application through your web browser, typically at [http://localhost:3000](http://localhost:3000).
 
+You can also just use the webservice here => <a href="https://image-crypt.netlify.app/">ImgCrypt</a>
+
 ## How It Works
 
-ImageCrypt makes use of powerful encryption techniques to secure your image files. Here's a brief overview of the process:
+<a href="https://image-crypt.netlify.app/">ImgCrypt</a> makes use of powerful encryption techniques to secure your image files. Here's a brief overview of the process:
 
 1. **Encryption:**
    - Upload an image file to the web application.
@@ -62,7 +66,7 @@ ImageCrypt places a strong emphasis on data security. We employ the AES-256 encr
 
 ## Contributing
 
-We welcome contributions from the open-source community. If you encounter any issues, have feature requests, or would like to contribute code, please check our [Contribution Guidelines](CONTRIBUTING.md).
+We welcome contributions from the open-source community. If you encounter any issues, have feature requests, or would like to contribute code, please feel free to fork the repo and issue a merge request. 
 
 ## License
 
@@ -70,12 +74,11 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## Support
 
-If you have questions or encounter any issues, please [open an issue](https://github.com/yourusername/imagecrypt/issues) on our GitHub repository.
+If you have questions or encounter any issues, please [open an issue](https://github.com/ishanaudichya/Image-encryption-service/issues) on our GitHub repository.
 
 ## Acknowledgments
 
-ImageCrypt is the result of the hard work of our dedicated team. We are grateful for the contributions and support from the open-source community.
+Feel free to the project or the part of a project. A mention would go a long way as appreciation 
 
 ---
 
-*Note: Make sure to replace the placeholder URLs and `yourusername` with the actual information related to your project.*
