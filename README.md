@@ -2,7 +2,7 @@
 # ImageCrypt | Secure Image Encryption
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa478661-c16c-4ba9-b97e-07d8a28bbef0/deploy-status)](https://app.netlify.com/sites/image-encrypt/deploys)
 
-![Live Preview](https://img.shields.io/badge/Website%20Preview-red)
+<a href="https://image-crypt.netlify.app/">![Live Preview](https://img.shields.io/badge/Website%20Preview-red)</a>
 
 <a href="https://image-crypt.netlify.app/">ImgCrypt</a> is a <b>react</b> web-based tool that empowers you to securely encrypt image files using cutting-edge hashing and the AES-256 encryption algorithm. This guarantees that only authorized users with the correct password can decrypt and view the original image. ImageCrypt has been meticulously designed to prioritize security while offering a straightforward and user-friendly experience.
 
