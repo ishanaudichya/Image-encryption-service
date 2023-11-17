@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -7,24 +7,28 @@ function Navbar() {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  return (<>
-
-    <nav className="navbar">
-
-    <div className="navbar-left"><a href="/decrypt">Decrypt</a></div>
-    <div className="navbar-center"><span className="website-name">Imgcrypt</span></div>
-    <div className='navbar-right'> <ul class="nav-links">
-            <li><a href="https://github.com/ishanaudichya">GitHub</a></li>
-            <li><a href="https://ishanaudichya.netlify.app/">Dev</a></li>
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar-left">
+          <a href="">Decrypt</a>
+        </div>
+        <div className="navbar-center">
+          <span className="website-name">Imgcrypt</span>
+        </div>
+        <div className="navbar-right">
+          {" "}
+          <ul class="nav-links">
+            <li>
+              <a href="https://github.com/ishanaudichya">GitHub</a>
+            </li>
+            <li>
+              <a href="https://ishanaudichya.netlify.app/">Dev</a>
+            </li>
           </ul>
-          </div>
+        </div>
 
-
-
-
-
-
-{/* 
+        {/* 
       <div className="navbar-left">
         
       </div>
@@ -34,8 +38,8 @@ function Navbar() {
       <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
         ☰
       </div> */}
-    </nav>
-    <style>{`
+      </nav>
+      <style>{`
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
   
@@ -80,7 +84,7 @@ font-family: 'Lobster', sans-serif;
 
 
 `}</style>
-  </>
+    </>
   );
 }
 
