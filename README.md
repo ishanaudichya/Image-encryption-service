@@ -1,5 +1,5 @@
-
 # ImageCrypt | Secure Image Encryption
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa478661-c16c-4ba9-b97e-07d8a28bbef0/deploy-status)](https://app.netlify.com/sites/image-encrypt/deploys)
 
 <a href="https://image-crypt.netlify.app/">![Live Preview](https://img.shields.io/badge/Website%20Preview-red)</a>
@@ -18,7 +18,7 @@
 
 To get started with ImageCrypt, follow these steps:
 
-1. Clone this repository to your local machine or download the latest release from our [Releases](https://github.com/yourusername/imagecrypt/releases) page.
+1. Clone this repository to your local machine.
 2. Set up the project by running `npm install` to install the required dependencies.
 3. Start the web application using `npm start`.
 4. Access the application through your web browser, typically at [http://localhost:3000](http://localhost:3000).
@@ -30,6 +30,7 @@ You can also just use the webservice here => <a href="https://image-crypt.netlif
 <a href="https://image-crypt.netlify.app/">ImgCrypt</a> makes use of powerful encryption techniques to secure your image files. Here's a brief overview of the process:
 
 1. **Encryption:**
+
    - Upload an image file to the web application.
    - Enter a strong password for encryption.
    - Click the "Encrypt" button.
@@ -66,7 +67,7 @@ ImageCrypt places a strong emphasis on data security. We employ the AES-256 encr
 
 ## Contributing
 
-We welcome contributions from the open-source community. If you encounter any issues, have feature requests, or would like to contribute code, please feel free to fork the repo and issue a merge request. 
+We welcome contributions from the open-source community. If you encounter any issues, have feature requests, or would like to contribute code, please feel free to fork the repo and issue a merge request.
 
 ## License
 
@@ -78,7 +79,6 @@ If you have questions or encounter any issues, please [open an issue](https://gi
 
 ## Acknowledgments
 
-Feel free to the project or the part of a project. A mention would go a long way as appreciation 
+Feel free to the project or the part of a project. A mention would go a long way as appreciation
 
 ---
-
