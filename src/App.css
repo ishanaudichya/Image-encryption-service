@@ -5,7 +5,7 @@
   }
 html,
 body {
-  background: url("./assets/bg.png");
+  background:linear-gradient(-135deg, #0b122b, #252459, #535C91, #9290C3);
   height: 100%;
   width: 100%;
   background-size:auto;
