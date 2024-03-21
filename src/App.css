@@ -2,12 +2,11 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  }
+}
 html,
 body {
-  background:linear-gradient(-135deg, #0b122b, #252459, #535C91, #9290C3);
+  background: linear-gradient(-135deg, #0b122b, #252459, #535c91, #9290c3);
   height: 100%;
   width: 100%;
-  background-size:auto;
-/* er */
+  background-size: auto;
 }
